@@ -1,0 +1,12 @@
+.container {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+
+  .quickBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); // viewhieght - nav element - padding
+  }
+}
