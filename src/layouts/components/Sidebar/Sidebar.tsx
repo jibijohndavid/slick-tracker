@@ -1,9 +1,11 @@
 import React from 'react';
-import styles from './Sidebar.module.scss';
+import useStyles from './styles';
 
 import Nav from '../Nav';
 
 const Sidebar = () => {
+  const styles = useStyles();
+
   return (
     <div className={styles.container}>
       <Nav />

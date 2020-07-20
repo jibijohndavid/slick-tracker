@@ -1,15 +1,14 @@
 import React from 'react';
-import styles from './MainLayout.module.scss';
+import useStyles from './styles';
 
 import Sidebar from './components/Sidebar';
 
 interface IMainLayoutProps {
-  children: any;
+  children: React.ReactChild;
 }
 
-const MainLayout: React.FC<IMainLayoutProps> = ({
-  children,
-}: IMainLayoutProps) => {
+const MainLayout = ({ children }: IMainLayoutProps) => {
+  const styles = useStyles();
   return (
     <div className={styles.container}>
       <Sidebar />

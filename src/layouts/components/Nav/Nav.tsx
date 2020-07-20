@@ -1,7 +1,9 @@
 import React from 'react';
-import styles from './Nav.module.scss';
+import useStyles from './styles';
 
 const Nav = () => {
+  const styles = useStyles();
+
   return <div className={styles.container}>Nav</div>;
 };
 
