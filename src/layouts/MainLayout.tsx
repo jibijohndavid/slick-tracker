@@ -12,7 +12,7 @@ const MainLayout = ({ children }: IMainLayoutProps) => {
   return (
     <div className={styles.container}>
       <Sidebar />
-      <div className={styles.body}>{children}</div>
+      <main className={styles.body}>{children}</main>
     </div>
   );
 };
