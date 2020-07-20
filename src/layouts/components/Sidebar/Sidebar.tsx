@@ -7,10 +7,10 @@ const Sidebar = () => {
   const styles = useStyles();
 
   return (
-    <aside className={styles.container}>
-      <Nav name="Jibi" value={0} />
+    <div className={styles.container}>
+      <Nav />
       <div className={styles.quickBar}>Sidebar</div>
-    </aside>
+    </div>
   );
 };
 
