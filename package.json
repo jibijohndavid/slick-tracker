@@ -58,16 +58,16 @@
     "prettier": "^2.0.5",
     "typescript": "^3.9.6"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsc --noEmit && lint-staged"
-    }
-  },
   "lint-staged": {
     "**/*": [
       "eslint --fix",
       "prettier --write",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsc --noEmit && lint-staged"
+    }
   }
 }
