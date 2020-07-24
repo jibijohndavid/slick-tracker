@@ -1,7 +1,7 @@
 import React from 'react';
-import useStyles from './styles';
 
 import Nav from '../Nav';
+import useStyles from './styles';
 
 const Sidebar = () => {
   const styles = useStyles();

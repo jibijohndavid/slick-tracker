@@ -1,9 +1,9 @@
-import React from 'react';
 import { ThemeProvider } from '@material-ui/styles';
+import React from 'react';
 
-import theme from './theme';
 import MainLayout from './layouts/MainLayout';
 import Routes from './Routes';
+import theme from './theme';
 
 function App(): React.ReactElement {
   return (
