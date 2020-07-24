@@ -1,8 +1,6 @@
 module.exports = {
   env: {
     browser: true,
-    es2020: true,
-    es6: true,
   },
   extends: [
     'prettier',
