@@ -1,11 +1,12 @@
-import React from 'react';
+import { Typography } from "@material-ui/core";
+import React from "react";
 
-import Nav from '../Nav';
-import useStyles from './styles';
 import GeneralButton from '../GeneralButton';
 import AddIcon from '@material-ui/icons/Add';
 import { orange } from '@material-ui/core/colors';
 import AvatharText from '../AvatharText';
+import Nav from "../Nav";
+import useStyles from "./styles";
 
 const Sidebar = () => {
   const styles = useStyles();
@@ -20,6 +21,11 @@ const Sidebar = () => {
         txtOne={'Happy Sunday,'}
         txtTwo={'John!'}
       />
+      <div className={styles.quickBar}>
+        <Typography variant="h4" component="h4" color="textSecondary">
+          Sidebar
+        </Typography>
+      </div>
       <div style={{ marginTop: 32 }}>
         <GeneralButton
           btnText={'Add Task'}
