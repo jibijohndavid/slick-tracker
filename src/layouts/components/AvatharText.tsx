@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 
 interface IProps {
@@ -8,13 +8,11 @@ interface IProps {
   txtTwo: string;
 }
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
-    root: {
+    container: {
       display: 'flex',
-      '& > *': {
-        margin: theme.spacing(1),
-      },
+      padding: 12,
     },
   }),
 );
@@ -24,9 +22,9 @@ const AvatharText = (props: IProps) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.container}>
       <Avatar alt="Remy Sharp" src={imgSrc} />
-      <div style={{ flexDirection: 'column' }}>
+      <div style={{ flexDirection: 'column', paddingLeft: 16 }}>
         <div style={{ color: 'blue' }}>{txtOne}</div>
         <div style={{ color: 'blue', fontWeight: 'bold' }}>
           {txtTwo}
