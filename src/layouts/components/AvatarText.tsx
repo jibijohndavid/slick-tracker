@@ -17,7 +17,7 @@ const useStyles = makeStyles(() =>
   }),
 );
 
-const AvatharText = (props: IProps) => {
+const AvatarText = (props: IProps) => {
   const { imgSrc, txtOne, txtTwo } = props;
   const classes = useStyles();
 
@@ -34,4 +34,4 @@ const AvatharText = (props: IProps) => {
   );
 };
 
-export default AvatharText;
+export default AvatarText;

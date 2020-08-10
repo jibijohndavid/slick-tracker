@@ -4,7 +4,7 @@ import React from "react";
 import GeneralButton from '../GeneralButton';
 import AddIcon from '@material-ui/icons/Add';
 import { orange } from '@material-ui/core/colors';
-import AvatharText from '../AvatharText';
+import AvatarText from '../AvatarText';
 import Nav from "../Nav";
 import useStyles from "./styles";
 
@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <aside className={styles.container}>
       <Nav />
-      <AvatharText
+      <AvatarText
         imgSrc={
           'https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png'
         }
