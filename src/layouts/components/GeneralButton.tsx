@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/styles';
 
-interface IProps {
+type IProps = {
   btnColor: any;
   btnText: string;
   btnIcon?: any;
@@ -16,8 +16,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const GeneralButton = (props: IProps) => {
-  const { btnText, btnIcon, btnColor } = props;
+const GeneralButton = ({ btnText, btnIcon, btnColor }: IProps) => {
   const classes = useStyles();
 
   const ColorButton = withStyles((theme: Theme) => ({

@@ -2,10 +2,11 @@ import React from 'react';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 
-interface IProps {
+type IProps = {
   imgSrc: string;
   txtOne: string;
   txtTwo: string;
+  altText: string;
 }
 
 const useStyles = makeStyles(() =>
@@ -17,13 +18,13 @@ const useStyles = makeStyles(() =>
   }),
 );
 
-const AvatarText = (props: IProps) => {
-  const { imgSrc, txtOne, txtTwo } = props;
+const AvatarText = ({ imgSrc, txtOne, txtTwo, altText }: IProps) => {
+
   const classes = useStyles();
 
   return (
     <div className={classes.container}>
-      <Avatar alt="Remy Sharp" src={imgSrc} />
+      <Avatar alt={altText} src={imgSrc} />
       <div style={{ flexDirection: 'column', paddingLeft: 16 }}>
         <div style={{ color: 'blue' }}>{txtOne}</div>
         <div style={{ color: 'blue', fontWeight: 'bold' }}>

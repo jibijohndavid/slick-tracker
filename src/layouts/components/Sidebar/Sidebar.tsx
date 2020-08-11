@@ -20,6 +20,7 @@ const Sidebar = () => {
         }
         txtOne={'Happy Sunday,'}
         txtTwo={'John!'}
+        altText={'Profile Image'}
       />
       <div className={styles.quickBar}>
         <Typography variant="h4" component="h4" color="textSecondary">
