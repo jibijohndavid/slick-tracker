@@ -1,12 +1,11 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
 
-import GeneralButton from '../GeneralButton';
-import AddIcon from '@material-ui/icons/Add';
-import { orange } from '@material-ui/core/colors';
-import AvatarText from '../AvatarText';
 import Nav from "../Nav";
 import useStyles from "./styles";
+import AddIcon from '@material-ui/icons/Add';
+import AvatarText from "src/components/AvatharText";
+import GeneralButton from "src/components/Button/GeneralButon";
 
 const Sidebar = () => {
   const styles = useStyles();
@@ -27,11 +26,12 @@ const Sidebar = () => {
           Sidebar
         </Typography>
       </div>
-      <div style={{ marginTop: 32 }}>
+      <div style={{ width: '100%' }}>
         <GeneralButton
           btnText={'Add Task'}
+          btnvariant={'contained'}
+          btnColor={'secondary'}
           btnIcon={<AddIcon />}
-          btnColor={orange}
         />
       </div>
     </aside>
