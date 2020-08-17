@@ -1,6 +1,6 @@
-import React from 'react';
 import { TextField } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
+import React from 'react';
 
 
 interface IProps {
@@ -41,7 +41,7 @@ const TextInputComponent = (props: IProps) => {
         size='small'
         {...props}
       />
-    </div >
+    </div>
   );
 };
 

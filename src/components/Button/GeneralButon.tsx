@@ -1,5 +1,6 @@
-import React from 'react';
 import { Button } from '@material-ui/core';
+import React from 'react';
+
 import useStyles from './styles';
 
 type IProps = {
@@ -13,16 +14,16 @@ const GeneralButton = ({ btnText, btnvariant, btnColor, btnIcon }: IProps) => {
     const styles = useStyles();
 
     return (
-        <div>
-            <Button
-                variant={btnvariant}
-                color={btnColor}
-                startIcon={btnIcon}
-                className={styles.button}
-            >
-                {btnText}
-            </Button>
-        </div>
+      <div>
+        <Button
+          variant={btnvariant}
+          color={btnColor}
+          startIcon={btnIcon}
+          className={styles.button}
+        >
+          {btnText}
+        </Button>
+      </div>
     );
 };
 

@@ -55,14 +55,14 @@ const CheckboxList = (props: CheckboxProps) => {
           {dataArray.map((item, index) => (
             <FormControlLabel
               key={item.id}
-              control={
+              control={(
                 <Checkbox
                   key={item.id}
                   checked={boolVal[index]}
                   onChange={handleChange}
                   name={item}
                 />
-              }
+              )}
               label={item}
             />
           ))}
