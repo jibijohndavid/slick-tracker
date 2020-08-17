@@ -4,7 +4,7 @@ import React from "react";
 
 import MainLayout from "./layouts/MainLayout";
 import Routes from "./Routes";
-import { darkTheme, lightTheme } from "./theme";
+import { darkTheme, lightTheme } from "./utils/theme/theme";
 
 function App(): React.ReactElement {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
