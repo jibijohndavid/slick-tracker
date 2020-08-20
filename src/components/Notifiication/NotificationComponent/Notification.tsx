@@ -11,7 +11,7 @@ interface IProps {
   onCloseClick?: () => void;
 }
 
-const NotificationComponent = (props: IProps) => {
+const Notification = (props: IProps) => {
   const { taskCount, onCloseClick } = props;
   const classes = useStyles();
   const tasks = (
@@ -46,4 +46,4 @@ const NotificationComponent = (props: IProps) => {
   );
 };
 
-export default NotificationComponent;
+export default Notification;
