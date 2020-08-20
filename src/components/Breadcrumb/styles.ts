@@ -1,4 +1,6 @@
 import { makeStyles } from '@material-ui/styles';
+import palette from '../../utils/theme/theme/light/palette';
+
 
 const useStyles = makeStyles({
   breadcrumbContainer: {
@@ -6,7 +8,7 @@ const useStyles = makeStyles({
       fontSize: 12,
       fontWeight: 500,
       textTransform: 'uppercase',
-      color: '#597191',
+      color: palette.text.secondary,
     },
     '& .MuiSvgIcon-fontSizeSmall': {
       fontSize: 22,

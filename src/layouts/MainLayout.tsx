@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import Sidebar from './components/Sidebar';
-import useStyles from './styles';
+import Sidebar from "./components/Sidebar";
+import useStyles from "./styles";
 
 interface IMainLayoutProps {
   children: React.ReactChild;

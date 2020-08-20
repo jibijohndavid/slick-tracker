@@ -4,11 +4,9 @@ import React from 'react';
 import useStyles from './styles';
 
 type AlertType = {
-  alertType: 'success' | 'info' | 'warning' | 'error' | undefined;
+  alertType: 'success' | 'info' | 'warning' | 'error';
   alertText: string;
   // alertIcon?: string;
-  alertCustomBgColor: string;
-  alertCustomColor: string;
 };
 
 const Alerts = ({ alertType, alertText }: AlertType) => {

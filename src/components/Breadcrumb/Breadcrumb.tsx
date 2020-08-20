@@ -5,7 +5,7 @@ import React from 'react';
 
 import useStyles from './styles';
 
-interface Iprops {
+type Iprops = {
   Arr: string[];
 }
 

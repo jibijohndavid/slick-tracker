@@ -1,5 +1,5 @@
-import { Card, CardContent, makeStyles, Typography } from '@material-ui/core';
-import React from 'react';
+import { Card, CardContent, makeStyles, Typography } from "@material-ui/core";
+import React from "react";
 
 export interface IDashboardProps {
   message: string;
@@ -8,7 +8,7 @@ export interface IDashboardProps {
 const useStyles = makeStyles({
   root: {
     maxWidth: 400,
-    margin: '0 auto',
+    margin: "0 auto",
   },
   pos: { marginBottom: 12 },
 });
@@ -21,7 +21,7 @@ const Dashboard: React.FC<IDashboardProps> = ({ message }: IDashboardProps) => {
       <CardContent>
         <Typography
           align="center"
-          color="textSecondary"
+          color="textPrimary"
           variant="h2"
           gutterBottom
         >
